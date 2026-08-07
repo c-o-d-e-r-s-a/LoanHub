@@ -27,15 +27,32 @@ This repository is notebook-first to make the analysis reproducible and easy to 
 ## 📁 Repository Structure 
 
 ```text
-├── notebooks/           # Jupyter notebooks (EDA, preprocessing, modeling, evaluation)
-├── data/                # (not included) place to add datasets (CSV/Parquet)
-├── src/ or scripts/     # reusable utilities and processing scripts (if present)
-├── models/              # serialized trained models (joblib / pickle)
-├── reports/             # generated plots, metrics, or experiment outputs
-└── requirements.txt     # Python dependencies (if present)
+notebooks/                 # Jupyter notebooks (EDA, preprocessing, modeling)
+  American Express ML Model.ipynb
+  BoFA ML Model.ipynb
+  Chase ML Model.ipynb
+  Truist ML Model.ipynb
+
+data/                      # CSV datasets 
+  American Express.csv
+  BoFA.csv
+  Chase.csv
+  Truist.csv
+
+app/ or scripts/           # inference / app scripts
+  loan_app.py
+
+web/                       # simple static UI / result pages
+  LoanHub.html
+  result.html
+
+models/                    # serialized trained models (joblib / pickle)
+reports/                   # generated plots, metrics, experiment outputs
+
+README.md
 ```
 
-> 💡 *Adjust these names to match the actual layout in the repo.*
+
 
 ---
 
