@@ -14,13 +14,13 @@ This repository is notebook-first to make the analysis reproducible and easy to 
 
 ## ✨ Key Features
 
-* 📊 **End-to-end example pipelines** in Jupyter notebooks
-* 🔍 **EDA and visualization notebooks** to explore applicant data
-* 🛠️ **Feature engineering recipes** commonly used in credit modeling
-* 🤖 **Baseline and tree-based model examples** (Logistic Regression, Random Forest, XGBoost/LightGBM)
-* 📈 **Evaluation examples** (ROC-AUC, precision/recall, calibration)
-* 💾 **Model serialization** for reuse in inference
-* 🚀 **Guidance for packaging inference** as an API
+* **End-to-end example pipelines** in Jupyter notebooks
+* **EDA and visualization notebooks** to explore applicant data
+* **Feature engineering recipes** commonly used in credit modeling
+* **Baseline and tree-based model examples** (Logistic Regression, Random Forest, XGBoost/LightGBM)
+* **Evaluation examples** (ROC-AUC, precision/recall, calibration)
+* **Model serialization** for reuse in inference
+* **Guidance for packaging inference** as an API
 
 ---
 
@@ -61,11 +61,11 @@ README.md
 Follow these steps to run the notebooks locally.
 
 ### 📋 Prerequisites
-* 🐍 **Python 3.8+** (3.10 recommended)
-* 🐙 **Git**
-* 📓 **JupyterLab** or **Jupyter Notebook**
-* 📦 **Common Python packages:** `numpy`, `pandas`, `scikit-learn`, `matplotlib`, `seaborn`, `joblib`
-* 🚀 **Optional:** `xgboost`, `lightgbm`, `shap` for additional models/explainability
+* **Python 3.8+** (3.10 recommended)
+* **Git**
+* **JupyterLab** or **Jupyter Notebook**
+* **Common Python packages:** `numpy`, `pandas`, `scikit-learn`, `matplotlib`, `seaborn`, `joblib`
+*  **Optional:** `xgboost`, `lightgbm`, `shap` for additional models/explainability
 
 ---
 
@@ -130,12 +130,12 @@ This repository does not include proprietary datasets. Add your dataset(s) to `d
 
 ---
 
-## 🤖 Modeling & Training
+## Modeling & Training
 
 Notebooks include example modeling approaches:
-* 📉 **Baseline logistic regression**
-* 🌳 **Tree-based models** (Random Forest, XGBoost/LightGBM)
-* ⚙️ **Preprocessing pipelines** with scikit-learn (imputation, scaling, encoding)
+* **Baseline logistic regression**
+* **Tree-based models** (Random Forest, XGBoost/LightGBM)
+* **Preprocessing pipelines** with scikit-learn (imputation, scaling, encoding)
 
 ### 🔄 Typical workflow:
 1. Load and clean data
@@ -160,11 +160,11 @@ model = joblib.load("models/best_model.joblib")
 ## 📊 Evaluation
 
 Recommended evaluation metrics and visualizations:
-* 🎯 **ROC AUC, Precision, Recall, F1-score**
-* 🔲 **Confusion matrix**
-* 📉 **Precision-Recall curve** (important for imbalanced data)
-* 📈 **Calibration curve and reliability plots**
-* 💡 **Feature importance and SHAP** for explainability
+* **ROC AUC, Precision, Recall, F1-score**
+* **Confusion matrix**
+* **Precision-Recall curve** (important for imbalanced data)
+* **Calibration curve and reliability plots**
+* **Feature importance and SHAP** for explainability
 
 ⚠️ *Use cross-validation and holdout/test sets for robust validation.*
 
@@ -173,9 +173,9 @@ Recommended evaluation metrics and visualizations:
 ## ⚡ Inference & Serving
 
 Simple approaches to serve a model:
-* 📑 **Batch inference scripts** that load serialized models and produce score files
-* 🌐 **Lightweight API** using Flask or FastAPI for real-time scoring
-* 🐳 **Dockerize the API** for deployment
+* **Batch inference scripts** that load serialized models and produce score files
+* **Lightweight API** using Flask or FastAPI for real-time scoring
+* **Dockerize the API** for deployment
 
 ### 📝 Example minimal FastAPI usage:
 ```python
@@ -198,6 +198,6 @@ def predict(payload: dict):
 ## 🧪 Experiment Tracking
 
 For reproducible experiments consider:
-* 🛠️ **MLflow** or **Weights & Biases** for logging runs, metrics, and artifacts
-* 💾 Saving a `requirements.txt` and a snapshot of the notebook (or using `nbstripout` to reduce noise)
-* 🔒 Storing random seeds and data preprocessing steps in the notebook or a config file
+* **MLflow** or **Weights & Biases** for logging runs, metrics, and artifacts
+* Saving a `requirements.txt` and a snapshot of the notebook (or using `nbstripout` to reduce noise)
+* Storing random seeds and data preprocessing steps in the notebook or a config file
