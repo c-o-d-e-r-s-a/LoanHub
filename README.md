@@ -48,33 +48,41 @@ Follow these steps to run the notebooks locally.
 ```bash
 git clone https://github.com/c-o-d-e-r-s-a/LoanHub.git
 cd LoanHub
+```
+
 
 Create and activate a virtual environment:
 Using venv:
 
-bash
+```bash
 python -m venv .venv
 source .venv/bin/activate   # macOS / Linux
 .\.venv\Scripts\activate    # Windows PowerShell
+```
+
 Using conda:
 
-bash
+```bash
 conda create -n loanhub python=3.10 -y
 conda activate loanhub
+```
 Install dependencies:
-bash
+```bash
 pip install -r requirements.txt  # if a requirements file exists
 # or
 pip install numpy pandas scikit-learn matplotlib seaborn jupyterlab joblib
 # optional
 pip install xgboost lightgbm shap
+```
+
 Running the notebooks
 Start Jupyter and open the notebooks:
 
-bash
+```bash
 jupyter lab
 # or
 jupyter notebook
+```
 Run notebooks in order: data preparation / EDA -> feature engineering -> training -> evaluation -> inference.
 
 Data
